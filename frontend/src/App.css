@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+/* Background and container styling */
+.container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #C7C5F4, #776BCC);
+  padding: 20px;
+}
+
+/* Row styling */
+.row1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Column styling */
+.col1 {
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Card styling */
+.card {
+  background: linear-gradient(90deg, #5D54A4, #7C78B8);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 24px #5C5696;
+  padding: 30px;
+  color: #070707;
+  overflow: hidden;
+}
+
+/* Card header */
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-header h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* Form label and input fields */
+.form-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  color: #040404;
+}
+
+.form-control,
+.form-select {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  background: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #020202;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  outline: none;
+  border-bottom-color: #6a679e;
+}
+
+/* Error message */
+.alert-message {
+  color: #fff;
+  background-color: #d9534f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit button */
+.button1 {
+  background: #fff;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 26px;
+  border: 1px solid #d4d3e8;
+  color: #4c489d;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 2px 2px #5c5696;
+}
+
+.button1:hover {
+  border-color: #6a679e;
+  background: #d4d3e8;
+}
+
+.button1:disabled {
+  background: #6c757d;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+/* Login link */
+.mt-3.text-center {
+  margin-top: 20px;
+}
+
+.mt-3.text-center .btn-link {
+  color: #d1d1d4;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.mt-3.text-center .btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+}
